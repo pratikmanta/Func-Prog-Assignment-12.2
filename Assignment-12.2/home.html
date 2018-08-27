@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- added title -->
+    <title>Functional-Programming Assignment 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        var arr = [10,8,12,36];         //given input array 
+        
+        // doubled the value of array
+        var double = arr.map(x => x*2);
+        console.log(double);
+
+        //values of array filtered
+        var filteredArray = double.filter(x => x > 20);       
+        console.log(filteredArray); 
+
+        // sum of filtered array
+        var sum = filteredArray.reduce((sum,current) => sum + current);  
+        console.log(`Sum of filtered array is ${sum}`);
+    </script>
+</head>
+<body>
+    <h1>Result can be seen in console</h1>
+</body>
+</html>
